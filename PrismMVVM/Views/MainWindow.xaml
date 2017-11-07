@@ -1,0 +1,20 @@
+﻿<Window x:Class="PrismMVVM.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:mvvm="http://prismlibrary.com/"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:PrismMVVM.ViewModels"
+        mvvm:ViewModelLocator.AutoWireViewModel="true"
+        d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel}"
+        mc:Ignorable="d"
+        Background="SkyBlue"
+        Title="Prism MVVM" Height="350" Width="525">
+
+
+    <!--Mainregion-->
+    <Grid  Grid.Column="1">
+        <ContentControl  FocusVisualStyle="{x:Null}"  mvvm:RegionManager.RegionName="MainRegion" Margin="10" />
+    </Grid>
+
+</Window>
